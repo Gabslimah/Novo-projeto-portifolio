@@ -45,25 +45,25 @@ body {
         font-family: "Play", serif;
         font-weight: 400;
         font-style: normal;
-        gap: 40px;
 }
 
     .apresentacao__links {
         display: flex;
-        justify-content: space-between     
+        justify-content: space-between 
 }
 
     .apresentacao__links__link {
         background-color: #22D4FD;
         width: 220px;
         text-align: center;
+        margin-top: 40px; /* espaçamento acima dos botões */
         border-radius: 16px;
         font-size: 24px;
         font-weight: 600;
-        padding: 10.5px 0;
+        padding: 10.5px 1,5px;
         text-decoration: none;
         color: #000000;
         font-family: "Kanit", serif;
-    }
+}
 
 
