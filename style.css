@@ -25,7 +25,10 @@ body {
 }  
 
     .apresentacao__conteudo {
-    width: 615px;
+        width: 615px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
 }
 
     .apresentacao__conteudo__titulo {
@@ -42,12 +45,12 @@ body {
         font-style: normal;
 }
 
-    .apresentcao__links {
+    .apresentacao__links {
         display: flex;
         justify-content: space-between     
 }
 
-    .apresentcao__links__link {
+    .apresentacao__links__link {
         background-color: #22D4FD;
         width: 280px;
         text-align: center;
