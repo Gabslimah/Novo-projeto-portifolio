@@ -1,0 +1,20 @@
+body {
+    background-color: #f1f1f1; /* raisin black */
+    color: #F6F6F6; /* vivid sky blue */
+}
+    .titulo-destaque {
+    color: #22D4FD; /* cinza */
+    }
+    
+h1 {
+    color: #CAD8DE; /* cinza */
+    /* Adicionar mais estilos conforme necessário */
+}
+p {
+    color: #007EA7; /* cinza */
+    /* Adicionar mais estilos conforme necessário */
+} 
+ul {
+    color: #CAD8DE; /* cinza */
+    /* Adicionar mais estilos conforme necessário */    
+}
