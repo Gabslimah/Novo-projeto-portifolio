@@ -29,12 +29,11 @@ https://github.com/Gabslimah/Novo-projeto-portifolio
 Tecnologias Utilizadas
 O portfólio foi desenvolvido utilizando as seguintes tecnologias:
 
-HTML
-CSS
-JavaScript
-React.js
+### HTML
+### CSS
+### JavaScript
 
-# CONTRIBUIÇÃO
+## Contribuição
 
 ## Caso queira contribuir com melhorias ou sugestões para o meu portfólio, sinta-se à vontade para abrir uma issue ou enviar um pull request no repositório do projeto:
 
@@ -44,6 +43,6 @@ React.js
 ## Para entrar em contato comigo, você pode utilizar os seguintes canais:
 
 ### E-mail: biellima.oliver28@gmail.com / gabriel.oliverlima@outlook.com
-   LinkedIn: https://www.linkedin.com/in/gaabslimah)
-   GitHub: https://github.com/Gabslimah
-   Instagram: https://www.instagram.com/lima.gabriel38
+    LinkedIn: https://www.linkedin.com/in/gaabslimah)
+    GitHub: https://github.com/Gabslimah 
+    Instagram: https://www.instagram.com/lima.gabriel38 
