@@ -94,6 +94,7 @@ body::before {
     color: #F6F6F6;
     text-decoration: none;
     padding: 16px;
+    text-decoration:none;
 }
 
 .apresentacao__links {
