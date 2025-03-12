@@ -6,55 +6,64 @@
 * {
     margin: 0;
     padding: 0;
-
 }
 
 body {
-    box-sizing: border-box;
+    display: block;
     background-color: #031116;
-    /* raisin black */
-    color: #F6F6F6;
-    /* vivid sky blue */
+    /* Rich black */
 }
 
 body::before {
-    background-image: url("./assets/image.png");
+    /* fundo translucido letras aleátorias*/
+    background-image: url("/assets/image.png");
     background-repeat: no-repeat;
     background-position: right;
     content: "";
-    display: center;
-    position:fixed;
+    display: block;
+    position: absolute;
     width: 100%;
     height: 100%;
     opacity: 0.1;
-
 }
+
+
+
 .cabecalho {
+    /* about.html-home-sobre mim */
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 2% 0 0 10%;
 }
+
 .cabecalho__menu {
+    /* redirecionamneto de página-sobre mim */
     display: flex;
-    gap: 80px;
+    gap: 32px;
 }
-.cabecalho__menu__link {
+
+
+.cabecalho__menu__link__subtitulo {
+    /* sobre mim about.html */
     font-size: 24px;
     font-family: "Big Shoulders Inline", sans-serif;
-    font-weight: 600;
+    font-weight: 400;
     color: #22D4FD;
-
+    /* branco */
 }
 
 .apresentacao {
-    padding: 5%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+        /* main class  */
+        padding: 5%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;/* Certifique-se de que o elemento pai tenha posição relativa */
 }
 
+ 
 .apresentacao__conteudo {
+    /* apresentação: Eleve seu negócio... */
     width: 615px;
     display: flex;
     flex-direction: column;
@@ -62,42 +71,47 @@ body::before {
 
 }
 
+
 .apresentacao__conteudo__titulo {
+    /* eleve seu negócio...*/
     font-size: 36px;
     font-family: "Orbitron", sans-serif;
-    color: #22D4FD;
-
+    color: #F6F6F6
+        /*azul vívido */
 }
 
 
 .apresentacao__conteudo__texto {
+    /* ola! sou grabriel... */
     font-size: 24px;
     font-family: "Big Shoulders Inline", sans-serif;
-
+    color: #adb5bd
 }
 
 .titulo__destaque {
-    color: #22D4FD;
+    /* destaque com um frontend...*/
+    color: #22D4FD; 
+    /* vivid blue */
 }
 
 .container__imagem-dev {
+    /* minha foto */
     width: 100%;
-    max-width: 400px;
+    max-width: 500px;
     height: auto;
 }
 
 .cabecalho__menu__link {
-    
+    /* redirecionamneto de página-sobre mim about.html */
     font-size: 24px;
-    font-family: "Orbitron", sans-serif;
+    font-family: "Big Shoulders Inline", sans-serif;
     font-weight: 600;
-    color: #F6F6F6;
-    text-decoration: none;
-    padding: 16px;
-    text-decoration:none;
+    color: #22D4FD;
+    /* vivid blue */
 }
 
 .apresentacao__links {
+    /* div link botões */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -106,18 +120,22 @@ body::before {
 }
 
 .apresentacao__links__subtitulo {
+    /* acesse minha resdes */
     font-size: 24px;
     font-family: "Big Shoulders Inline", sans-serif;
     font-weight: 400;
+    color: #F6F6F6;
+    /* branco */
 }
 
 
 .apresentacao__links__link {
-    /* background-color: #22D4FD; */
+    /* botões redireciona redes sociais */
     display: flex;
     justify-content: center;
     gap: 16px;
     border: 2px solid #22D4FD;
+    /* vivid blue */
     width: 378px;
     text-align: center;
     border-radius: 8px;
@@ -130,15 +148,21 @@ body::before {
 }
 
 .apresentacao__links__link:hover {
-    background-color: #F6F6F6;
+    /* transição de cor click botão */
+    background-color: #22D4FD;
+    /* branco */
 
 }
 
 .rodape {
+    /* assinatura rodapé */
     color: #000000;
+    /* preto */
     padding: 24px;
     display: flex;
+    justify-content: center;
     background-color: #22D4FD;
+    /* vivid blue */
     font-family: "big-shoulders-inline", sans-serif;
     font-size: 24px;
     font-weight: 400;
