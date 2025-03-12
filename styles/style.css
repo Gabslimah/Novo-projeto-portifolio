@@ -54,14 +54,15 @@ body::before {
 }
 
 .apresentacao {
-        /* main class  */
-        padding: 5%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;/* Certifique-se de que o elemento pai tenha posição relativa */
+    /* main class  */
+    padding: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* Certifique-se de que o elemento pai tenha posição relativa */
 }
 
- 
+
 .apresentacao__conteudo {
     /* apresentação: Eleve seu negócio... */
     width: 615px;
@@ -90,14 +91,16 @@ body::before {
 
 .titulo__destaque {
     /* destaque com um frontend...*/
-    color: #22D4FD; 
+    color: #22D4FD;
     /* vivid blue */
 }
 
 .container__imagem-dev {
     /* minha foto */
     width: 450px;
-
+    border: 5px solid #22D4FD;* Define a espessura e a cor do contorno */
+    border-radius: 15px; /Adiciona bordas arredondadas, se desejado */
+    padding:10px;/* Espaçamento interno, se você quiser um efeito de "margem" entre a imagem e o contorno */
     height: auto;
     margin: 10px 15px 10px 15px;
 }
