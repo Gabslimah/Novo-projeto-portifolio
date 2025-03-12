@@ -96,9 +96,10 @@ body::before {
 
 .container__imagem-dev {
     /* minha foto */
-    width: 100%;
-    max-width: 500px;
+    width: 450px;
+
     height: auto;
+    margin: 10px 15px 10px 15px;
 }
 
 .cabecalho__menu__link {
