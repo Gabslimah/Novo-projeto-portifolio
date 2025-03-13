@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline:opsz@10..72&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline:opsz@10..72&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
 
 
@@ -11,11 +10,10 @@
 body {
     display: block;
     background-color: #031116;
-    /* Rich black */
+
 }
 
 body::before {
-    /* fundo translucido letras aleátorias*/
     background-image: url("/assets/image.png");
     background-repeat: no-repeat;
     background-position: right;
@@ -25,97 +23,87 @@ body::before {
     width: 100%;
     height: 100%;
     opacity: 0.1;
+    z-index: 0;
+    pointer-events: none;
 }
 
 
-
 .cabecalho {
-    /* about.html-home-sobre mim */
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 2% 0 0 10%;
+
 }
 
+
 .cabecalho__menu {
-    /* redirecionamneto de página-sobre mim */
     display: flex;
     gap: 32px;
 }
 
 
 .cabecalho__menu__link__subtitulo {
-    /* sobre mim about.html */
     font-size: 24px;
     font-family: "Big Shoulders Inline", sans-serif;
-    font-weight: 400;
+    font-weight: 600;
     color: #22D4FD;
-    /* branco */
+
 }
 
+
 .apresentacao {
-    /* main class  */
     padding: 5%;
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    /* Certifique-se de que o elemento pai tenha posição relativa */
+    align-items: center;
 }
 
 
 .apresentacao__conteudo {
-    /* apresentação: Eleve seu negócio... */
     width: 615px;
     display: flex;
     flex-direction: column;
     gap: 40px;
-
+    z-index: 1;
 }
 
 
 .apresentacao__conteudo__titulo {
-    /* eleve seu negócio...*/
     font-size: 36px;
     font-family: "Orbitron", sans-serif;
-    color: #F6F6F6
-        /*azul vívido */
+    text-align: center;
+    justify-content: center;
+    color: #F6F6F6;
 }
 
 
 .apresentacao__conteudo__texto {
-    /* ola! sou grabriel... */
     font-size: 24px;
     font-family: "Big Shoulders Inline", sans-serif;
     color: #adb5bd
 }
 
+
 .titulo__destaque {
-    /* destaque com um frontend...*/
     color: #22D4FD;
-    /* vivid blue */
 }
+
 
 .container__imagem-dev {
-    /* minha foto */
     width: 450px;
-    border: 5px solid #22D4FD;* Define a espessura e a cor do contorno */
-    border-radius: 15px; /Adiciona bordas arredondadas, se desejado */
-    padding:10px;/* Espaçamento interno, se você quiser um efeito de "margem" entre a imagem e o contorno */
-    height: auto;
-    margin: 10px 15px 10px 15px;
+    border: 0.5px solid #22D4FD;
 }
 
+
 .cabecalho__menu__link {
-    /* redirecionamneto de página-sobre mim about.html */
-    font-size: 24px;
     font-family: "Big Shoulders Inline", sans-serif;
     font-weight: 600;
     color: #22D4FD;
-    /* vivid blue */
 }
 
+
 .apresentacao__links {
-    /* div link botões */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -123,23 +111,29 @@ body::before {
     gap: 32px;
 }
 
+
 .apresentacao__links__subtitulo {
-    /* acesse minha resdes */
     font-size: 24px;
     font-family: "Big Shoulders Inline", sans-serif;
     font-weight: 400;
     color: #F6F6F6;
-    /* branco */
+
 }
 
 
+.apresentacao__links__link img {
+    filter: brightness(0) invert(1);
+}
+
+
+
 .apresentacao__links__link {
-    /* botões redireciona redes sociais */
+    position: relative;
+    z-index: 1;
     display: flex;
     justify-content: center;
     gap: 16px;
     border: 2px solid #22D4FD;
-    /* vivid blue */
     width: 378px;
     text-align: center;
     border-radius: 8px;
@@ -149,25 +143,34 @@ body::before {
     text-decoration: none;
     color: #F6F6F6;
     font-family: "Orbitron", sans-serif;
+    transition: background-color 0.3s ease;
 }
 
-.apresentacao__links__link:hover {
-    /* transição de cor click botão */
-    background-color: #22D4FD;
-    /* branco */
 
+.apresentacao__links__link:hover {
+    background-color: #F6F6F6;
+    color: #000000;
+    transform: scale(1.1);
+}
+.apresentacao__links__link i {
+    color: white; /* Cor dos ícones padrão */
+    transition: color 0.3s ease, transform 0.3s ease, opacity 0.3s ease; /* Adiciona transição para cor, transformação e opacidade */
+    opacity: 10; /* Opacidade padrão */
+}
+
+.apresentacao__links__link:hover i {
+    color: #22D4FD; /* Muda a cor dos ícones para azul ao passar o mouse */
+    transform: scale(1.2); /* Aumenta o tamanho do ícone em 20% */
+    opacity: 1; /* Aumenta a opacidade ao passar o mouse */
 }
 
 .rodape {
-    /* assinatura rodapé */
     color: #000000;
-    /* preto */
     padding: 24px;
     display: flex;
     justify-content: center;
     background-color: #22D4FD;
-    /* vivid blue */
     font-family: "big-shoulders-inline", sans-serif;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 400;
 }
