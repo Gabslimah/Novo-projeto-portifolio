@@ -32,14 +32,15 @@ body::before {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2% 0 0 10%;
+    padding: 1% 0 0 45%;
 
 }
 
 
 .cabecalho__menu {
     display: flex;
-    gap: 32px;
+    gap: 80px;
+    position: center;
 }
 
 
@@ -48,15 +49,17 @@ body::before {
     font-family: "Big Shoulders Inline", sans-serif;
     font-weight: 600;
     color: #22D4FD;
-
+    text-align: center;
 }
 
 
 .apresentacao {
+    position: relative;
     padding: 5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0px 200px 100px 200px;
 }
 
 
@@ -65,6 +68,7 @@ body::before {
     display: flex;
     flex-direction: column;
     gap: 40px;
+
     z-index: 1;
 }
 
@@ -72,7 +76,7 @@ body::before {
 .apresentacao__conteudo__titulo {
     font-size: 36px;
     font-family: "Orbitron", sans-serif;
-    text-align: center;
+    text-align: justify;
     justify-content: center;
     color: #F6F6F6;
 }
@@ -81,7 +85,16 @@ body::before {
 .apresentacao__conteudo__texto {
     font-size: 24px;
     font-family: "Big Shoulders Inline", sans-serif;
-    color: #adb5bd
+    align-items: center;
+    text-align: justify;
+    color: #F6F6F6;
+}
+
+.apresentacao__redes {
+    font-size: 20px;
+    font-family: "Big Shoulders Inline", sans-serif;
+    text-align: center;
+    color: #F6F6F6;
 }
 
 
@@ -91,22 +104,37 @@ body::before {
 
 
 .container__imagem-dev {
-    width: 450px;
+    width: 380px;
     border: 0.5px solid #22D4FD;
+    border-radius: 8px;
+    height: auto;
+    margin: 0px 0px 320px 0px;
+
+}
+
+
+.container__imagem-dev:hover {
+    background-color: #F6F6F6;
+    color: #22D4FD;
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #22D4FD;
+    border-radius: 5%;
 }
 
 
 .cabecalho__menu__link {
+    font-size: 24px;
     font-family: "Big Shoulders Inline", sans-serif;
     font-weight: 600;
     color: #22D4FD;
+    text-align: center;
 }
 
 
 .apresentacao__links {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     gap: 32px;
 }
@@ -117,7 +145,6 @@ body::before {
     font-family: "Big Shoulders Inline", sans-serif;
     font-weight: 400;
     color: #F6F6F6;
-
 }
 
 
@@ -126,23 +153,23 @@ body::before {
 }
 
 
-
 .apresentacao__links__link {
-    position: relative;
     z-index: 1;
     display: flex;
+    margin: 1px;
     justify-content: center;
+    text-align: justify;
     gap: 16px;
     border: 2px solid #22D4FD;
     width: 378px;
-    text-align: center;
     border-radius: 8px;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 600;
     padding: 21.5px 0;
     text-decoration: none;
     color: #F6F6F6;
     font-family: "Orbitron", sans-serif;
+    margin: 0px 0px 10px 100px;
     transition: background-color 0.3s ease;
 }
 
@@ -151,17 +178,26 @@ body::before {
     background-color: #F6F6F6;
     color: #000000;
     transform: scale(1.1);
+    box-shadow: 0 0 10px #22D4FD;
+
 }
+
 .apresentacao__links__link i {
-    color: white; /* Cor dos ícones padrão */
-    transition: color 0.3s ease, transform 0.3s ease, opacity 0.3s ease; /* Adiciona transição para cor, transformação e opacidade */
-    opacity: 10; /* Opacidade padrão */
+    color: white;
+    /* Cor dos ícones padrão */
+    transition: color 0.3s ease, transform 0.3s ease, opacity 0.3s ease;
+    /* Adiciona transição para cor, transformação e opacidade */
+    opacity: 10;
+    /* Opacidade padrão */
 }
 
 .apresentacao__links__link:hover i {
-    color: #22D4FD; /* Muda a cor dos ícones para azul ao passar o mouse */
-    transform: scale(1.2); /* Aumenta o tamanho do ícone em 20% */
-    opacity: 1; /* Aumenta a opacidade ao passar o mouse */
+    color: #22D4FD;
+    /* Muda a cor dos ícones para azul ao passar o mouse */
+    transform: scale(1.2);
+    /* Aumenta o tamanho do ícone em 20% */
+    opacity: 1;
+    /* Aumenta a opacidade ao passar o mouse */
 }
 
 .rodape {
@@ -173,4 +209,19 @@ body::before {
     font-family: "big-shoulders-inline", sans-serif;
     font-size: 20px;
     font-weight: 400;
+
+}
+
+
+#dev-name {
+    transition: color 0.1s ease;
+    color: #f6f6f6;
+}
+
+#dev-name:hover {
+    color: #f6f6f6;
+    cursor: pointer;
+    transform: scale(1.1);
+    border-radius: 5;
+    box-shadow: 0 0 10px #22D4FD;/
 }
