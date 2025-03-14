@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Muda a cor do rodapé ao passar o mouse
     devName.addEventListener("mouseover", function () {
-        rodape.style.backgroundColor = "#031116"; // Altere para a cor desejada
+        rodape.style.backgroundColor = "#22D4FD"; // Altere para a cor desejada
     });
 
     // Restaura a cor original quando o mouse sai
