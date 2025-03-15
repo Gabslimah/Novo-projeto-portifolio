@@ -9,7 +9,7 @@
 
     --font-primary: 'Big Shoulders Inline', sans-serif;
     --font-secondary: 'Orbitron', sans-serif;
-    
+
 }
 
 * {
@@ -46,7 +46,7 @@ body::before {
 
 .cabecalho__menu {
     display: flex;
-    gap: 80px;
+    gap: 205px;
 }
 
 .cabecalho__menu__link {
@@ -57,12 +57,13 @@ body::before {
     text-decoration: none;
 }
 
+
 .apresentacao {
     padding: 5% 15% 5% 15%;
     display: flex;
     align-items: center;
+    gap: 150px;
 }
-
 .apresentacao__conteudo {
     width: 615px;
     display: flex;
@@ -71,12 +72,15 @@ body::before {
 
     z-index: 1;
 }
+
+
 .cabecalho__menu__link__subtitulo {
     font-size: 1.5rem;
-    font-family: var(--font-primary);   
+    font-family: var(--font-primary);
     font-weight: 600;
     color: var(--color-secondary);
     text-align: center;
+    text-decoration: none;
 }
 
 
@@ -85,29 +89,28 @@ body::before {
     display: flex;
     flex-direction: column;
     gap: 40px;
+    align-items: center;
 
-    z-index: 1;
+    
 }
-
 
 .apresentacao__conteudo__titulo {
     font-size: 2.25rem;
     font-family: var(--font-secondary);
 }
 
-
 .titulo__destaque {
     color: var(--color-secondary);
 }
 
-
 .apresentacao__conteudo__texto {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     font-family: var(--font-primary);
     align-items: center;
     text-align: justify;
     color: var(--color-tertiary);
 }
+
 
 .apresentacao__links {
     display: flex;
@@ -124,9 +127,12 @@ body::before {
 }
 
 
+
+
 .apresentacao__links__link img {
     filter: brightness(0) invert(1);
 }
+
 .apresentacao__links__link {
     z-index: 1;
     display: flex;
@@ -144,12 +150,14 @@ body::before {
     font-family: var(--font-secondary);
     transition: background-color 0.3s ease;
 }
+
 .apresentacao__links__link:hover {
     background-color: var(--color-tertiary);
     color: var(--color-quaternary);
     transform: scale(1.1);
     box-shadow: 0 0 10px var(--color-secondary);
 }
+
 .apresentacao__links__link i {
     color: var(--color-tertiary);
     /* Cor dos ícones padrão */
@@ -158,6 +166,7 @@ body::before {
     opacity: 10;
     /* Opacidade padrão */
 }
+
 .apresentacao__links__link:hover i {
     color: var(--color-secondary);
     /* Muda a cor dos ícones para azul ao passar o mouse */
@@ -176,18 +185,15 @@ body::before {
 }
 
 .apresentacao__imagem-dev {
-    gap: 5%;
-    background-size: 50%;
+    width: 35%;
+    border-radius: 1%;
 }
-.apresentacao__imagem-dev:hover {
-    background-color: var(--color-secondary);
-    color: var(--color-secondary);
-    transform: scale(1.1);
-    box-shadow: 0 0 20px var(--color-secondary);
-    border-radius: 5%;
+.apresentacao__imagem-dev img {
+    transform: scale(10.1s);
+    border: var(--color-secondary) 2px solid;
+    border-radius: 50%;
+    transition: transform 0.3s ease;   
 }
-
-
 
 .rodape {
     color: var(--color-quaternary);
@@ -199,14 +205,20 @@ body::before {
     font-size: 1.25rem;
     font-weight: 400;
 }
+
 #dev-name {
     transition: color 0.1s ease;
     color: var(--color-tertiary);
     z-index: 0;
 }
+
 #dev-name:hover {
-    
     transform: scale(1.1);
-    border-radius: 5;
-    box-shadow: 0 0 10px var(--color-secondary)
+   
+}
+
+@media (max-width: 1024px) {
+    .apresentacao {
+        flex-direction: column-reverse;
+    }
 }
