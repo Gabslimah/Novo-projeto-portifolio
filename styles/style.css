@@ -26,16 +26,17 @@ body {
 
 body::before {
     background-image: url("/assets/image.png");
-    background-repeat: no-repeat;
-    background-position: right;
+    background-repeat: inherit;
+    background-position: unset;
     content: "";
     display: block;
-    position: absolute;
+    position:absolute;
     width: 100%;
     height: 100%;
     opacity: 0.1;
-    z-index: 0;
+    z-index: -1;
     pointer-events: none;
+    
 }
 
 
@@ -184,30 +185,38 @@ body::before {
 
 .apresentacao__imagem-dev {
     width: 35%;
-    border-radius: 1%;
+    border: 1px solid var(--color-secondary);
+    border-radius: 2%;
     align-items: right;
 }
 .apresentacao__imagem-dev:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 10px var(--color-secondary);    
+    animation: girar 1s forwards; 
+}    
 
+@keyframes girar-com-escala {
+    0% { transform: rotate(0deg) scale(1); }
+    100% { transform: rotate(360deg) scale(1.2); }
 }
 
 .rodape {
     color: var(--color-quaternary);
-    z-index: 10;
     padding: 24px;
     background-color: var(--color-secondary);
     text-align: center;
-    font-family: var(--font-primary);
+    font-family: var(--font-secondary);
     font-size: 1.25rem;
     font-weight: 400;
 }
 
-#dev-name {
+.hidden {
+    visibility: hidden; /* Torna o texto invisível, mas mantém o espaço */
+    opacity: 0; /* Torna o texto invisível */
+    transition: opacity 0.5s ease, visibility 0.5s ease; /* Transição suave */
+}
+    #dev-name {
     transition: color 0.1s ease;
-    color: var(--color-tertiary);
-    z-index: 0;
+
+    
 }
 
 #dev-name:hover {
