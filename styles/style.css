@@ -190,13 +190,10 @@ body::before {
     align-items: right;
 }
 .apresentacao__imagem-dev:hover {
-    animation: girar 1s forwards; 
-}    
-
-@keyframes girar-com-escala {
-    0% { transform: rotate(0deg) scale(1); }
-    100% { transform: rotate(360deg) scale(1.2); }
-}
+    transform: scale(1.1);
+    box-shadow: 0 0 10px var(--color-secondary);
+}          
+    
 
 .rodape {
     color: var(--color-quaternary);
