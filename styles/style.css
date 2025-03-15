@@ -127,8 +127,6 @@ body::before {
 }
 
 
-
-
 .apresentacao__links__link img {
     filter: brightness(0) invert(1);
 }
@@ -187,12 +185,12 @@ body::before {
 .apresentacao__imagem-dev {
     width: 35%;
     border-radius: 1%;
+    align-items: right;
 }
-.apresentacao__imagem-dev img {
-    transform: scale(10.1s);
-    border: var(--color-secondary) 2px solid;
-    border-radius: 50%;
-    transition: transform 0.3s ease;   
+.apresentacao__imagem-dev:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px var(--color-secondary);    
+
 }
 
 .rodape {

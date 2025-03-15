@@ -26,9 +26,23 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     // Restaura a cor original quando o mouse sai
-    devName.addEventListener("mouseleave", function () {
+    devName.addEventListener("mouseenter", function () {
         rodape.style.backgroundColor = "#22D4FD"; // Restaura a cor original
     });
 });
 
 
+
+        // Seleciona todos os links na navegação
+        const links = document.querySelectorAll('.apresentacao__links__link a');
+
+        // Adiciona um evento de clique a cada link
+        links.forEach(link => {
+            link.addEventListener('click', function(event) {
+                // Previne a navegação imediata
+                event.preventDefault();
+
+                // Reproduz o som
+                document.getElementById('meuSom').play();
+            });
+        });
