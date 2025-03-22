@@ -87,10 +87,10 @@ body::before {
 } 
 
 .about__apresentacao__redirecionamento {   /* about */
-    width: 615px;
+    width: 200px;
     text-align:center;
     display: flex;
-    flex-direction: row;
+    
 }
 
 .cabecalho__menu__link__subtitulo {
@@ -131,7 +131,7 @@ body::before {
     color: var(--color-tertiary);
 }
 .about__apresentacao___conteudo__texto {   /* about */
-    font-size: 1.8rem;
+    font-size: 1.0rem;
     font-family: var(--font-primary);
     align-items: center;
     text-align: justify;
@@ -148,10 +148,10 @@ color: var(--color-primary);
 
 
 .about__apresentacao__conteudo__titulo__sobre { /* about */
-    font-size: 8%;
+    font-size: 15%;
     font-family: var(--font-primary);
     align-items: center;
-    text-align: justify;
+    text-align:center;
     color: var(--color-tertiary);
 
 }
