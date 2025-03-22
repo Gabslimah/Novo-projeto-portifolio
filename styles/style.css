@@ -37,7 +37,6 @@ body::before {
     pointer-events: none;   
 }
 
-
 .cabecalho {
     padding: 2% 0% 0% 15%;
 }
@@ -55,7 +54,9 @@ body::before {
     color: var(--color-secondary);
     text-decoration: none;
 }
-
+#pagina-inicial .cabecalho__menu__link {
+    /* Estilos específicos para links do menu na página inicial */
+  }
 
 .apresentacao {
     padding: 5% 15% 5% 15%;
@@ -68,15 +69,31 @@ body::before {
     display: inline;
     flex-direction: column;
     gap: 40px;
-
     z-index: 1;
 }
-.apresentacao__redirecionamento {
-    width: 615px;
-    display: flex;
-    flex-direction:row;
-    gap: 40px;
 
+.apresentacao__conteudo__redirecionamento {   /* about */
+    width: 615px;
+    display: inline;
+    flex-direction: row;
+  
+}
+.apresentacao__links__link__contatos {  /* about */
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    gap: 8px;
+    width: 378px;
+    padding: 21.5px 0;
+    color: var(--color-tertiary);
+    transition: background-color 0.3s ease;
+} 
+
+.apresentacao__redirecionamento {   /* about */
+    width: 615px;
+    text-align:center;
+    display: flex;
+    flex-direction: row;
 }
 
 .cabecalho__menu__link__subtitulo {
@@ -102,6 +119,17 @@ body::before {
     color: var(--color-secondary);
 }
 
+.titulo__destaque__experiencias {    /* about */
+    color: var(--color-secondary);
+    font-family: var(--font-primary);
+}
+
+.titulo__destaque__sobre__mim {   /* about */
+    color: var(--color-secondary);
+    text-align: center;   
+}
+
+
 .apresentacao__conteudo__texto {
     font-size: 1.8rem;
     font-family: var(--font-primary);
@@ -109,6 +137,15 @@ body::before {
     text-align: justify;
     color: var(--color-tertiary);
 }
+
+.apresentacao__conteudo__texto__experiencias {    /* about */
+font-size: 1.8rem;
+font-family: var(--font-secondary);
+align-items: center;
+text-align: justify;
+color: var(--color-primary);  
+}
+
 
 .apresentacao__conteudo__titulo__sobre { /* about */
     font-size: 8%;
@@ -186,25 +223,18 @@ body::before {
     justify-content: center;
     text-decoration: none;
     gap: 8px;
-    border: 2px solid var(--color-secondary);
     width: 378px;
-    border-radius: 20px;
-    font-size: 12px;
-    font-weight: 200px;
     padding: 21.5px 0;
-    text-align: center;
     color: var(--color-tertiary);
-    font-family: var(--font-secondary);
     transition: background-color 0.3s ease;
 } 
-
-
 
 .apresentacao__redes {
     font-size: 1.25rem;
     font-family: var(--font-primary);
     text-align: center;
     color: var(--color-tertiary);
+    gap: 10px;
 }
 
 .apresentacao__imagem-dev {
