@@ -54,10 +54,7 @@ body::before {
     color: var(--color-secondary);
     text-decoration: none;
 }
-#pagina-inicial .cabecalho__menu__link {
-    /* Estilos específicos para links do menu na página inicial */
-  }
-
+  
 .apresentacao {
     padding: 5% 15% 5% 15%;
     display: flex;
@@ -72,13 +69,13 @@ body::before {
     z-index: 1;
 }
 
-.apresentacao__conteudo__redirecionamento {   /* about */
+.about__apresentacao__conteudo__redirecionamento {   /* about */
     width: 615px;
     display: inline;
     flex-direction: row;
   
 }
-.apresentacao__links__link__contatos {  /* about */
+.about__apresentacao__links__link__contatos {  /* about */
     display: flex;
     justify-content: center;
     text-decoration: none;
@@ -89,7 +86,7 @@ body::before {
     transition: background-color 0.3s ease;
 } 
 
-.apresentacao__redirecionamento {   /* about */
+.about__apresentacao__redirecionamento {   /* about */
     width: 615px;
     text-align:center;
     display: flex;
@@ -110,23 +107,19 @@ body::before {
     font-family: var(--font-secondary);
 }
 
-.apresentacao__conteudo__titulo__contatos {  /* about */
-    font-size: 10%;
-    font-family: var(--font-secondary);
-}
 
 .titulo__destaque {
     color: var(--color-secondary);
 }
 
-.titulo__destaque__experiencias {    /* about */
+.about__titulo__destaque__experiencias {    /* about */
     color: var(--color-secondary);
     font-family: var(--font-primary);
 }
 
-.titulo__destaque__sobre__mim {   /* about */
+.about__titulo__destaque__sobre__mim {   /* about */
     color: var(--color-secondary);
-    text-align: center;   
+    text-align: center;  ; 
 }
 
 
@@ -137,8 +130,15 @@ body::before {
     text-align: justify;
     color: var(--color-tertiary);
 }
+.about__apresentacao___conteudo__texto {   /* about */
+    font-size: 1.8rem;
+    font-family: var(--font-primary);
+    align-items: center;
+    text-align: justify;
+    color: var(--color-tertiary);
+}
 
-.apresentacao__conteudo__texto__experiencias {    /* about */
+.about__apresentacao__conteudo__texto__experiencias {    /* about */
 font-size: 1.8rem;
 font-family: var(--font-secondary);
 align-items: center;
@@ -147,7 +147,7 @@ color: var(--color-primary);
 }
 
 
-.apresentacao__conteudo__titulo__sobre { /* about */
+.about__apresentacao__conteudo__titulo__sobre { /* about */
     font-size: 8%;
     font-family: var(--font-primary);
     align-items: center;
@@ -218,7 +218,7 @@ color: var(--color-primary);
     /* Aumenta a opacidade ao passar o mouse */
 }
 
-.apresentacao__links__link__contatos {  /* about */
+.about__apresentacao__links__link__contatos {  /* about */
     display: flex;
     justify-content: center;
     text-decoration: none;
@@ -237,11 +237,20 @@ color: var(--color-primary);
     gap: 10px;
 }
 
+.about__apresentacao__conteudo__titulo__contatos {  /* about */
+    position: absolute;
+  top: 100%; /* Ajuste este valor para mover os ícones para cima */
+ 
+  
+}
+    
+
 .apresentacao__imagem-dev {
+    display: block;
     width: 35%;
     border: 1px solid var(--color-secondary);
     border-radius: 2%;
-    align-items: right;
+    z-index: 10;
 }
 .apresentacao__imagem-dev:hover {
     transform: scale(1.1);
