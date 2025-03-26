@@ -74,7 +74,13 @@ body::before {
     z-index: 0;
 }
 .apresentacao__links {
-    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
 
 .cabecalho__menu__link__subtitulo {
     font-size: 1.5rem;
@@ -111,39 +117,29 @@ body::before {
     text-align: center;
 } 
 .apresentacao__links {
+    height: 100%;
+    width: 250px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     gap: 32px;
 }
 
-.apresentacao__links__link {
+.apresentacao__links__link { /* ICONES DE CONTATO */
     display: flex;
-    justify-content: center;
-    text-decoration: none;
     gap: 16px;
-    width: 378px;
-    font-size: 1.3rem;
-    font-weight: 600;
     padding: 21.5px 0;
-    transition: background-color 0.3s ease;
 }
-.apresentacao__links__link:hover {
+.apresentacao__links__link:hover {  /* SALTAR AO CLICAR */
 transform: scale(1.5);
 }
 
-.apresentacao__links__subtitulo {
-    font-size: 1.5rem;
-    font-family: var(--font-primary);
-    font-weight: 400;
-}
-.apresentacao__links__subtitulo:hover {
-        transform: scale(1.5);
-}
+
+
 
 .apresentacao__imagem-dev {
-    display: block;
+    display: flex;
     width: 35%;
     border: 1px solid var(--color-secondary);
     border-radius: 2%;
@@ -155,13 +151,18 @@ transform: scale(1.5);
     
 
 .rodape {
+    
+    width: 100%;
+    position: absolute;
     color: var(--color-quaternary);
-    padding: 0.18rem;
-    background-color: var(--color-secondary);
     text-align: center;
     font-family: var(--font-secondary);
     font-size: 1.25rem;
     font-weight: 400;
+    box-sizing: border-box;
+    
+    z-index: 10;
+   
 }
 
 .hidden {
@@ -176,7 +177,8 @@ transform: scale(1.5);
 }
 
 #dev-name:hover {
-    transform: scale(1.1);
+ font-size: 1.25rem;
+    
    
 }
 

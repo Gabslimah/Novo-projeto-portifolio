@@ -199,17 +199,19 @@ body::before {
     
 
 .rodape {
-    color: var(--color-quaternary);
+    
     width: 100%;
-    padding: 0.18rem;
     position: absolute;
     margin: 0;
-    background-color: var(--color-secondary);
+    color: var(--color-quaternary);
     text-align: center;
     font-family: var(--font-secondary);
     font-size: 1.25rem;
     font-weight: 400;
     box-sizing: border-box;
+    margin-top: 50px;
+    z-index: 10;
+   
 }
 
 .hidden {
@@ -218,11 +220,14 @@ body::before {
     transition: opacity 0.5s ease, visibility 0.5s ease; /* Transição suave */
 }
     #dev-name {
-    transition: color var(--color-quaternary) 0.1s ease;   
+    transition: color 0.1s ease;
+
+    
 }
 
 #dev-name:hover {
-    font-size: 1.25rem;
+ font-size: 1.25rem;
+    
    
 }
 
