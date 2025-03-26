@@ -12,7 +12,7 @@
 
 }
 
-* {
+* about.html {
     font-size: 2.25rem;
     font-family: var(--font-secondary);
 }
@@ -63,14 +63,6 @@ body::before {
     gap: 150px;
 }
 
-.about__apresentacao {
-    padding: 5% 15% 5% 15%;
-    display: flex;
-    align-items: center;
-    gap: 150px;
-}
-
-
 .apresentacao__conteudo {
     width: 615px;
     display: inline;
@@ -89,15 +81,19 @@ body::before {
 }
 
 .apresentacao__conteudo__titulo {
-    font-size: 2.25rem;
-    font-family: var(--font-secondary);
+    font-size: 1.0rem;
+    font-family: var(--font-primary);
+    color: var(--color-tertiary);
 }
 
 
-.titulo__destaque {
-    color: var(--color-secondary);
+.apresentacao__links {
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
 }
-
 
 .apresentacao__conteudo__texto {
     font-size: 1.8rem;
@@ -115,68 +111,26 @@ body::before {
     gap: 32px;
 }
 
+.apresentacao__links__link {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    gap: 16px;
+    width: 378px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: 21.5px 0;
+    transition: background-color 0.3s ease;
+}
+.apresentacao__links__link:hover {
+transform: scale(1.5);
+}
+
 .apresentacao__links__subtitulo {
     font-size: 1.5rem;
     font-family: var(--font-primary);
     font-weight: 400;
 }
-
-
-.apresentacao__links__link img {
-    filter: brightness(0) invert(1);
-}
-
-.apresentacao__links__link {
-    z-index: 1;
-    display: flex;
-    justify-content: center;
-    text-decoration: none;
-    gap: 16px;
-    border: 2px solid var(--color-secondary);
-    width: 378px;
-    border-radius: 8px;
-    font-size: 1.3rem;
-    font-weight: 600;
-    padding: 21.5px 0;
-    text-align: center;
-    color: var(--color-tertiary);
-    font-family: var(--font-secondary);
-    transition: background-color 0.3s ease;
-}
-
-.apresentacao__links__link:hover {
-    background-color: var(--color-tertiary);
-    color: var(--color-quaternary);
-    transform: scale(1.1);
-    box-shadow: 0 0 10px var(--color-secondary);
-}
-
-.apresentacao__links__link i {
-    color: var(--color-tertiary);
-    /* Cor dos ícones padrão */
-    transition: color 0.3s ease, transform 0.3s ease, opacity 0.3s ease;
-    /* Adiciona transição para cor, transformação e opacidade */
-    opacity: 10;
-    /* Opacidade padrão */
-}
-
-.apresentacao__links__link:hover i {
-    color: var(--color-secondary);
-    /* Muda a cor dos ícones para azul ao passar o mouse */
-    transform: scale(1.2);
-    /* Aumenta o tamanho do ícone em 20% */
-    opacity: 1;
-    /* Aumenta a opacidade ao passar o mouse */
-}
-
-.apresentacao__redes {
-    font-size: 1.25rem;
-    font-family: var(--font-primary);
-    text-align: center;
-    color: var(--color-tertiary);
-    gap: 10px;
-}
-    
 
 .apresentacao__imagem-dev {
     display: block;
