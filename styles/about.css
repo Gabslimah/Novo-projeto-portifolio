@@ -52,57 +52,64 @@ body::before {
     font-size: 1.5rem;
     font-family: var(--font-primary);
     font-weight: 600;
-    color: var(--color-secondary);
     text-decoration: none;
+    color: var(--color-tertiary);
 }
-  
+.cabecalho__menu__link:hover{
+    transform: scale(1.2);
+}
+
 .apresentacao {
     padding: 5% 15% 5% 15%;
     display: flex;
     align-items: center;
-    gap: 150px;
+    gap: 100px;
 }
 
 .apresentacao__conteudo {
     width: 615px;
-    display: inline;
+    display: flex;
     flex-direction: column;
-    gap: 40px;
-    z-index: 1;
+    gap: -2px;
+    z-index: 0;
 }
+.apresentacao__links {
+    
 
 .cabecalho__menu__link__subtitulo {
     font-size: 1.5rem;
     font-family: var(--font-primary);
     font-weight: 600;
-    color: var(--color-secondary);
+    color: var(--color-tertiary);
     text-align: center;
     text-decoration: none;
 }
 
 .apresentacao__conteudo__titulo {
-    font-size: 1.0rem;
-    font-family: var(--font-primary);
+    font-size: 1.3rem;
+    font-family: var(--font-secondary);
     color: var(--color-tertiary);
+    text-align: center;
 }
-
-
-.apresentacao__links {
-    display: flex;
-    flex-direction:row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 32px;
+.apresentacao__conteudo__subtitulo {
+    font-size: 1.3rem;
+    font-family: var(--font-primary);
+    text-align: center;
+    color: var(--color-tertiary);
 }
 
 .apresentacao__conteudo__texto {
-    font-size: 1.8rem;
-    font-family: var(--font-primary);
+    font-size: 1.3rem;
+    font-family: var(--font-secondary);
     align-items: center;
     text-align: justify;
-    color: var(--color-tertiary);
+    color: var(--color-secondary);
 }
- 
+.titulo__destaque__sobre__mim {
+    font-family: var(--font-primary);
+    color: var(--color-tertiary);
+    text-align: center;
+} 
 .apresentacao__links {
     display: flex;
     flex-direction: column;
@@ -131,13 +138,15 @@ transform: scale(1.5);
     font-family: var(--font-primary);
     font-weight: 400;
 }
+.apresentacao__links__subtitulo:hover {
+        transform: scale(1.5);
+}
 
 .apresentacao__imagem-dev {
     display: block;
     width: 35%;
     border: 1px solid var(--color-secondary);
     border-radius: 2%;
-    z-index: 10;
 }
 .apresentacao__imagem-dev:hover {
     transform: scale(1.1);
@@ -147,7 +156,7 @@ transform: scale(1.5);
 
 .rodape {
     color: var(--color-quaternary);
-    padding: 24px;
+    padding: 0.18rem;
     background-color: var(--color-secondary);
     text-align: center;
     font-family: var(--font-secondary);

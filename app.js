@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Muda o texto ao passar o mouse
     devName.addEventListener("mouseenter", function () {
-        devName.textContent = "Alura Projeto-ONE G8: Créditos Luri"; // Altere para o texto que você deseja exibir //
+        devName.textContent = "©2025 Alura Projeto-ONE G8: Créditos Luri"; // Altere para o texto que você deseja exibir //
     });
 
     // Restaura o texto original quando o mouse sai
@@ -30,4 +30,23 @@ document.addEventListener("DOMContentLoaded", function () {
         rodape.style.backgroundColor = "#22D4FD"; // Restaura a cor original
     });
 });
+
+const links = document.querySelectorAll('a'); // Seleciona todos os links
+const clickSound = document.getElementById('click-sound'); // Seleciona o elemento de áudio
+let isPlaying = false;
+links.forEach(link => {
+    link.addEventListener('click', () => {
+        if (!isPlaying) {
+            isPlaying = true;
+            clickSound.currentTime = 0; // Reinicia o som
+            clickSound.play(); // Toca o som
+            clickSound.onended = () => {
+                isPlaying = false; // Permite tocar novamente quando o som terminar
+            };
+        }
+    });
+});
+
+
+
 
