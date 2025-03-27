@@ -26,7 +26,7 @@ body {
 
 body::before {
     background-image: url("/assets/image.png");
-    background-repeat: inherit;
+    background-repeat:round;
     background-position: unset;
     content: "";
     display: block;
@@ -163,7 +163,7 @@ body::before {
 .apresentacao__links__link:hover i {
     color: var(--color-secondary);
     /* Muda a cor dos ícones para azul ao passar o mouse */
-    transform: scale(1.2);
+    transform: scale(1.3);
     /* Aumenta o tamanho do ícone em 20% */
     opacity: 1;
     /* Aumenta a opacidade ao passar o mouse */
@@ -192,32 +192,32 @@ body::before {
     
 
 .rodape {
-    
-    width: 100%;
-    position: absolute;   
-    color: var(--color-quaternary);
+    background-color: var(--color-secondary); /* Cor inicial do rodapé */
+    font-size: var(--font-secondary);
     text-align: center;
-    font-family: var(--font-secondary);
-    font-size: 1.25rem;
-    font-weight: 400;
-    box-sizing: border-box;
-    
-   
+    padding: 10px;
+    transition: background-color 0.3s ease; /* Suaviza a mudança de cor */
+    border-bottom: 0;
+    position: absolute;
+    margin: 0;
+    left: 0;
+    right: 0;
 }
-
-.hidden {
-    visibility: hidden; /* Torna o texto invisível, mas mantém o espaço */
-    opacity: 0; /* Torna o texto invisível */
-    transition: opacity 0.5s ease, visibility 0.5s ease; /* Transição suave */
-}
-
-#dev-name {
-    transition: color 0.1s ease;   
-}
-
-#dev-name:hover {
-    font-size: 1.25rem;  
-}
+  
+  #dev-name {
+    color: var(--color-tertiary); /* Cor inicial do texto */
+    font-size: 16px;
+    transition: color 0.3s ease, opacity 0.3s ease; /* Transição de cor e opacidade */
+  }
+  
+  .rodape:hover {
+    background-color: var(--color-tertiary); /* Cor ao passar o mouse */
+  }
+  
+  .rodape:hover #dev-name {
+    color: var(--color-quaternary); /* Cor do texto ao passar o mouse */
+    opacity: 0.8; /* Suaviza a mudança de visibilidade */
+  }
 
 @media (max-width: 1024px) {
     .apresentacao {
