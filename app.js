@@ -21,14 +21,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-const links = document.querySelectorAll('a'); // Seleciona todos os links
+/* const links = document.querySelectorAll('a'); // Seleciona todos os links
 const clickSound = document.getElementById('click-sound'); // Seleciona o elemento de áudio
 let isPlaying = false;
 links.forEach(link => {
     link.addEventListener('click', () => {
-        if (!isPlaying) {
-            isPlaying = true;
-            clickSound.currentTime = 0; // Reinicia o som
+        if (!isPlaying) {           
             clickSound.play(); // Toca o som
             clickSound.onended = () => {
                 isPlaying = false; // Permite tocar novamente quando o som terminar
@@ -37,6 +35,17 @@ links.forEach(link => {
     });
 });
 
+*/
 
 
+document.addEventListener('DOMContentLoaded', () => {
+    const links = document.querySelectorAll('a'); // Seleciona todos os links
 
+    links.forEach(link => {
+        link.addEventListener('click', () => {
+            const clickSound = new Audio('som.mp3'); // Cria um novo objeto de áudio
+            clickSound.currentTime = 0; // Reinicia o som
+            clickSound.play(); // Reproduz o som
+        });
+    });
+});
