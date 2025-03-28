@@ -39,7 +39,7 @@ body::before {
 }
 
 .cabecalho {
-    padding: 2% 0% 0% 15%;
+    padding: 0% 0% 0% 15%;
 }
 
 
@@ -142,6 +142,7 @@ body::before {
     color: var(--color-tertiary);
     font-family: var(--font-secondary);
     transition: background-color 0.3s ease;
+    
 }
 
 .apresentacao__links__link:hover {
@@ -187,12 +188,13 @@ body::before {
 }
 .apresentacao__imagem-dev:hover {
     transform: scale(1.1);
-    box-shadow: 0 0 10px var(--color-secondary);
+    box-shadow: 4px -4px 4px var(--color-secondary);
 }          
     
 
 .rodape {
     background-color: var(--color-secondary); /* Cor inicial do rodapé */
+    font-family: var(--font-secondary);
     font-size: var(--font-secondary);
     text-align: center;
     padding: 10px;

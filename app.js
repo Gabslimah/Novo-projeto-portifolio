@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function () {  // Transição de texto e cor do rodapé
     const devName = document.getElementById("dev-name");
     const rodape = document.querySelector(".rodape");
 
@@ -37,7 +37,7 @@ links.forEach(link => {
 */
 
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {  // Som ao clicar nos botões //
     const links = document.querySelectorAll('a'); // Seleciona todos os links
 
     links.forEach(link => {
@@ -48,3 +48,48 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+
+//const apresentacaoImagemDev = document.querySelector('.apresentacao__imagem-dev'); // Transição de ícones ao clicar na foto
+//const apresentacaoLinks = document.querySelector('.apresentacao__links');
+
+//apresentacaoImagemDev.addEventListener('click', () => {
+  //  apresentacaoLinks.classList.toggle('aparecer'); // Adiciona ou remove a classe para mostrar os ícones
+//}); 
+
+
+
+//const apresentacaoImagemDev = document.querySelector('#about .apresentacao__imagem-dev'); // Aparecer icones de contato apos passar o mouse na foto //
+//const apresentacaoLinks = document.querySelector('#about.apresentacao__links');
+
+//apresentacaoImagemDev.addEventListener('mouseenter', () => {
+    // Aqui você pode adicionar qualquer ação que queira ao passar o mouse
+//});
+
+//apresentacaoImagemDev.addEventListener('mouseleave', () => {
+    // Após o mouse sair, adicione um atraso antes de mostrar os ícones
+  //  setTimeout(() => {
+ //       apresentacaoLinks.classList.toggle('aparecer'); // Mostra os ícones
+   // }, 500); // Ajuste o tempo conforme necessário
+//});
+
+
+// Seleciona o contêiner da imagem e os links de contato
+// Verifica se estamos na página correta
+if (document.getElementById('about')) {
+    const apresentacaoImagemDev = document.querySelector('#about .apresentacao__imagem-dev');
+    const apresentacaoLinks = document.querySelector('#about .apresentacao__links');
+
+    if (apresentacaoImagemDev && apresentacaoLinks) {
+        apresentacaoImagemDev.addEventListener('mouseenter', () => {
+            // Aqui você pode adicionar qualquer ação que queira ao passar o mouse
+        });
+
+        apresentacaoImagemDev.addEventListener('mouseleave', () => {
+            // Após o mouse sair, adicione um atraso antes de mostrar os ícones
+            setTimeout(() => {
+                apresentacaoLinks.classList.toggle('aparecer'); // Mostra os ícones
+            }, 500); // Ajuste o tempo conforme necessário
+        });
+    }
+}
