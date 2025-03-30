@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline:opsz@10..72&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+:root {
+    --color-primary: #031116;
+    --color-secondary: #22D4FD;
+    --color-tertiary: #f6f6f6;
+    --color-quaternary: #000000;
+
+    --font-primary: 'Big Shoulders Inline', sans-serif;
+    --font-secondary: 'Orbitron', sans-serif;
+
+}
+
+* index.html{
+    font-size: 2.25rem;
+    font-family: var(--font-secondary);
+}
+
+
+body {
+    margin: 0; /* Remove margens do body */
+    padding: 0; /* Remove padding do body */
+    box-sizing: border-box;
+    background-color: var(--color-primary);
+    
+}
+
+body::before {
+    background-image: url("/assets/image.png");
+    background-repeat:round;
+    background-position: unset;
+    content: "";
+    display: block;
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;
+    z-index: -1;
+    pointer-events: none;   
+}
+
+.cabecalho {
+    padding: 0% 0% 0% 15%;
+}
+
+
+.cabecalho__menu {
+    display: flex;
+    gap: 12.81rem;
+}
+
+.cabecalho__menu__link {
+    font-size: 1.5rem;
+    font-family: var(--font-primary);
+    font-weight: 600;
+    color: var(--color-secondary);
+    text-decoration: none;
+}
+
+.cabecalho__menu__link__subtitulo {
+    font-size: 1.5rem;
+    font-family: var(--font-primary);
+    font-weight: 600;
+    color: var(--color-secondary);
+    text-align: center;
+    text-decoration: none;
+}
+
+.apresentacao__conteudo__titulo {   /*Sobre mim */
+    font-size: 2.25rem;
+    font-family: var(--font-secondary);
+    color: var(--color-tertiary);
+}
+
+.apresentacao__conteudo__texto {
+    font-size: 1.8rem;
+    font-family: var(--font-primary);
+    align-items: center;
+    text-align: justify;
+    color: var(--color-tertiary);
+}
+
+.apresentacao__imagem-dev {
+    display: flex;
+    width: 35%;
+    border: 1px solid var(--color-secondary);
+    border-radius: 2%;
+    z-index: 10;
+   
+}
+
+.rodape {
+    background-color: var(--color-secondary); /* Cor inicial do rodapé */
+    font-family: var(--font-secondary);
+    text-align: center;
+    padding: 0.62rem;
+    transition: background-color 0.3s ease; /* Suaviza a mudança de cor */
+    border-bottom: 0;
+    position: relative;
+    margin: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;  
+    height: 3.43rem;
+    overflow: auto;
+}
+
+#dev-name {
+    color: var(--color-tertiary);
+    /* Cor inicial do texto */
+    font-size: 1rem;
+    transition: color 0.3s ease, opacity 0.3s ease;
+    /* Transição de cor e opacidade */
+}
+
+.rodape:hover {
+    background-color: var(--color-tertiary);
+    /* Cor ao passar o mouse */
+}
+
+.rodape:hover #dev-name {
+    color: var(--color-quaternary);
+    /* Cor do texto ao passar o mouse */
+    opacity: 0.8;
+    /* Suaviza a mudança de visibilidade */
+}
+
+@media (max-width: 94.29rem) {
+    .apresentacao {
+        flex-direction: column-reverse;
+    }
+}

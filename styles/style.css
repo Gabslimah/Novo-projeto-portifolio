@@ -68,14 +68,6 @@ body::before {
 }
 
 
-.apresentacao__conteudo {
-    width: 38.43rem;
-    display: inline;
-    flex-direction: column;
-    gap: 0.31rem;
-    z-index: 1;
-}
-
 .cabecalho__menu__link__subtitulo {
     font-size: 1.5rem;
     font-family: var(--font-primary);
