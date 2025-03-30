@@ -1,0 +1,11 @@
+*.log
+*.tmp
+*.bak
+.env
+config.json
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-orkspace
+Thumbs.db
+.DS__Store

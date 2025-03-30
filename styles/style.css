@@ -19,9 +19,11 @@
 
 
 body {
+    margin: 0; /* Remove margens do body */
+    padding: 0; /* Remove padding do body */
     box-sizing: border-box;
     background-color: var(--color-primary);
-    color: var(--color-tertiary);
+    
 }
 
 body::before {
@@ -45,7 +47,7 @@ body::before {
 
 .cabecalho__menu {
     display: flex;
-    gap: 205px;
+    gap: 12.81rem;
 }
 .cabecalho__menu__link {
     font-size: 1.5rem;
@@ -59,18 +61,18 @@ body::before {
 }
   
 .apresentacao {
-    padding: 5% 15% 5% 15%;
+    padding: 5% 15% 15% 15%;
     display: flex;
     align-items: center;
-    gap: 150px;
+    gap: 9.37rem;
 }
 
 
 .apresentacao__conteudo {
-    width: 615px;
+    width: 38.43rem;
     display: inline;
     flex-direction: column;
-    gap: 40px;
+    gap: 0.31rem;
     z-index: 1;
 }
 
@@ -112,7 +114,7 @@ body::before {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    gap: 32px;
+    gap: 2rem;
 }
 
 .apresentacao__links__subtitulo {
@@ -131,13 +133,13 @@ body::before {
     display: flex;
     justify-content: center;
     text-decoration: none;
-    gap: 16px;
+    gap: 1rem;
     border: 2px solid var(--color-secondary);
-    width: 378px;
+    width: 23.62rem;
     border-radius: 8px;
     font-size: 1.3rem;
     font-weight: 600;
-    padding: 21.5px 0;
+    padding: 1.34rem 0;
     text-align: center;
     color: var(--color-tertiary);
     font-family: var(--font-secondary);
@@ -175,7 +177,7 @@ body::before {
     font-family: var(--font-primary);
     text-align: center;
     color: var(--color-tertiary);
-    gap: 10px;
+    gap: 0.62rem;
 }
     
 
@@ -185,6 +187,7 @@ body::before {
     border: 1px solid var(--color-secondary);
     border-radius: 2%;
     z-index: 10;
+   
 }
 .apresentacao__imagem-dev:hover {
     transform: scale(1.1);
@@ -195,24 +198,23 @@ body::before {
 .rodape {
     background-color: var(--color-secondary); /* Cor inicial do rodapé */
     font-family: var(--font-secondary);
-    font-size: var(--font-secondary);
     text-align: center;
-    padding: 10px;
+    padding: 0.62rem;
     transition: background-color 0.3s ease; /* Suaviza a mudança de cor */
     border-bottom: 0;
-    position: absolute;
+    position: relative;
     margin: 0;
     left: 0;
     right: 0;
     bottom: 0;
-
-    
-    overflow: hidden;
+    width: 100%;  
+    height: 3.43rem;
+    overflow: auto;
 }
   
   #dev-name {
     color: var(--color-tertiary); /* Cor inicial do texto */
-    font-size: 16px;
+    font-size: 1rem;
     transition: color 0.3s ease, opacity 0.3s ease; /* Transição de cor e opacidade */
   }
   

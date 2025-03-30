@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {  // Transição de t
 
     // Muda o texto e a cor ao passar o mouse (mouseenter)
     rodape.addEventListener("mouseenter", function () {
-        devName.textContent = "©2025 Alura Projeto-ONE G8: Créditos Luri"; // Texto alternativo
+        devName.textContent = "© 2025 Alura Projeto-ONE G8: Créditos Luri"; // Texto alternativo
         rodape.style.backgroundColor = "#F6F6F6"; // Altere para a cor desejada
     });
 
